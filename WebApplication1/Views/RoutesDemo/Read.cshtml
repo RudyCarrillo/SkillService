@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <p>
+            Ingrese el elemento a buscar:
+            <input type="text" id="name" ng-model="element.name"/>
+            <input type="button" value="Buscar" ng-click="read()"/>
+
+            <ul >
+                <li ng-repeat="res in result.parents">
+                    <span>{{res}}</span>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+
+        </p>
+    </div>
+</body>
+</html>

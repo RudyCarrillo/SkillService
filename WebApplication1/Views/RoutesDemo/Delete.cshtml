@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <p>
+                <label for="">Name:</label>
+                <input type="text" id="name" ng-model="element.name" />
+                <input type="button" value="Delete" ng-click="disableButton();delete()" ng-disabled="isDisabled" />
+        </p>
+    </div>
+</body>
+</html>

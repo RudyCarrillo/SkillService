@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <div ng-controller="ReadController">
+
+            <p>
+                <label for="">Node to modify:</label>
+                <input type="text" id="name" ng-model="toUpdate.name" />
+                @*<label for="">Parent's name:</label>
+                <input type="text" id="name" ng-model="element.parent"/>*@
+                <input type="button" value="Select" ng-click="read('toUpdate')" /><br /><br />
+                <div>
+                    <input type="text" ng-model="parentToAdd.name" />
+                    <input type="button" value="Add parent" ng-click="update()" /><br /><br />
+                </div>
+                <label for="">Parents:</label>
+                <ul>
+                    <li ng-repeat="res in result.parents">
+                        <span><input type="button" value="Delete">{{res}}</span>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+      </div>
+
+</body>
+</html>
